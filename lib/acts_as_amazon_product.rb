@@ -113,7 +113,6 @@ module Netphase
                   AmazonProduct.new(:xml => res.to_html, 
                     :asin => (res.at('itemattributes/isbn').nil? ? 
                       res.at('asin').inner_html : res.at('itemattributes/isbn').inner_html))
-                self.amazon_product.save
               else
                 logger.error "No known attributes to search by"
               end            
