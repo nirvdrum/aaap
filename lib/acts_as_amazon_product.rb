@@ -118,7 +118,7 @@ module Netphase
                 logger.error "No known attributes to search by"
               end            
             rescue
-              puts "Amazon lookup failed: $!"
+              puts "Amazon lookup failed: #{$!}"
               self.amazon_product = AmazonProduct.new(:xml => "")
             end
           end
