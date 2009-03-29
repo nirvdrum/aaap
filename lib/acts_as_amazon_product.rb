@@ -1,10 +1,10 @@
 # ActsAsAmazonProduct
 
 require 'rubygems'
-#require 'active_support'
 require 'active_record'
 require 'amazon/ecs'
-require 'amazon_product'
+require File.expand_path(File.dirname(__FILE__) + "/amazon_product")
+
 
 module Netphase
   module Acts #:nodoc:

@@ -1,6 +1,9 @@
 require 'test/unit'
 require 'yaml'
+require 'rubygems'
+require 'activerecord'
 
+require File.expand_path(File.dirname(__FILE__) + "/../lib/amazon_product")
 require File.expand_path(File.dirname(__FILE__) + "/../lib/acts_as_amazon_product")
 
 #require File.expand_path(File.dirname(__FILE__) + "/../init")
